@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css\reg.css">
+    <title>Register</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">Insert Doctor Information</div>  
+        <form action="home.html" >
+            <div class="user-details">
+                <div class="input-box"> 
+                    <span class="details">Email</span>
+                    <input type="text" id = "email_txt" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    
+                        <label for="start">Birthday:</label>
+                        <input type="date" id="date_txt" name="trip-start"
+                        value="2023-06-21"
+                        min="1980-01-01" max="2015-12-31">
+                    
+                </div>
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" id = "doc_name_txt" placeholder="Enter your full_name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">speciality</span>
+                    <input type="text" id = "speciality_txt" placeholder="Enter Speciality" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">ID</span>
+                    <input type="text" id = "ID_txt" placeholder="Enter ID" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" id = "Phone_txt" placeholder="Enter your number" required>
+                </div>
+                
+                
+            </div>
+            <div class="gender-details">
+                <label for="sex">Gender:</label>
+                <select id="sex_txt" required>
+                    <optgroup label="Gender">
+                        <option value="" disabled selected>Select your Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div id="insert_btn" class="button">
+
+                <input type="submit" value="Insert">
+
+            </div>
+        </form>
+        <div class="button">
+            <input type="submit" onclick="location.href='admin.html'" value="Back">
+        </div>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="doctor_insert.js"></script>
+</body>
+</html>

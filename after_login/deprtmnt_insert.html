@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css\reg.css">
+    <title>Department</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Insert A New Department</div>
+        <form action="home.html">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Department ID</span>
+                    <input type="text" id="ID_txt" placeholder="Enter The code" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Department name</span>
+                    <input type="text" id="dname_txt" placeholder="Enter Department_name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Department location</span>
+                    <input type="text" id="location_txt" placeholder="Enter your Username" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Supervisor ID</span>
+                    <input type="text" id="sup_id_txt" placeholder="Enter Superviser_id" required>
+                </div>
+                
+            <div id="register_btn" class="button">
+
+                <input type="submit" value="Insert" style="padding: 5px;">
+
+            </div>
+        </form>
+        <div class="button">
+            <input type="submit" onclick="location.href='admin.html'" value="Back" style="padding: 5px;">
+        </div>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="deprtmnt_insert.js"></script>
+</body>
+
+</html>

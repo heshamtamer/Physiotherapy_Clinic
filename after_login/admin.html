@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Admin</title>
+  
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">ALPT</a>
+    <nav class="navigation">
+      <a href="#">Admin Page</a>
+      <button id="insert_btn">Insert</button>
+      <a href="../before_login/home.html">logout</a> 
+    </nav>
+      
+  </header>
+
+  <div class="button-container">
+    <button id="doctors_btn" class="cssbutton">Doctors</button>
+    <button id="equipment_btn" class="cssbutton">Equipment</button>
+    <button id="sessions_btn" class="cssbutton">Sessions</button>
+    <button id="user_btn" class="cssbutton">Users</button>
+    <button id="department_btn" class="cssbutton">Department</button>
+    <!-- <button id="doctors_btn" class="cssbutton">Show</button> -->
+  </div>
+  
+
+  <div id="table-container-1" class="table-container">
+    <table>
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="s">
+    <footer class="footer">
+        <p class="footer-title">Copy rights @ <span>SBME</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

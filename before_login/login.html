@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css\login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class = "center">
+        <h1>Login</h1>
+        <form action="home.html">
+            <div class="txt_field">
+                <input id = 'UsernameLogin_txt' type="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input id = 'PasswordLogin_txt' type="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div id="forget_btn" class="pass">Forgot password?</div>
+            <input id="login_btn" type="submit" value="Login"> 
+            <div class="signup_link">
+                Don't have an account? <a href="register.html">Signup</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="login.js"></script>
+</body>
+</html>

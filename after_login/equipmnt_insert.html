@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css\reg.css">
+    <title>Equipment</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title">Insert Equipment Information</div>  
+        <form action="home.html" >
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Equipment Name</span>
+                    <input type="text" id = "ename_txt" placeholder="Enter Equipment Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">ID</span>
+                    <input type="text" id = "ID_txt" placeholder="Enter Equipment ID" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Model	</span>
+                    <input type="text" id = "emodel_txt" placeholder="Enter Equipment Model" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Serial Number</span>
+                    <input type="text" id = "sn_txt" placeholder="Enter Equipment Serial_Number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Acquisition Date</span>
+                    <input type="text" id = "acq_txt" placeholder="Enter Acquisition Date" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Purchase Cost</span>
+                    <input type="text" id = "cost_txt" placeholder="Enter Equipment Purchase Cost " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Available</span>
+                    <input type="text" id = "AV_txt" placeholder="Enter Availability" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Session ID	</span>
+                    <input type="text" id = "sid_txt" placeholder="Enter Session_ID	" required>
+                </div>
+            </div>
+            
+            <div id="register_btn" class="button">
+
+                <input type="submit" value="Insert">
+
+            </div>
+        </form>
+        <div class="button">
+            <input type="submit" onclick="location.href='admin.html'" value="Back">
+        </div>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="equipmnt_insert.js"></script>
+</body>
+</html>

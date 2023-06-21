@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation button{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.navigation a:hover {
+    color: #601cfc;
+}
+.navigation button:hover {
+    color: #601cfc;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.table-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    top: 110px;
+    position: relative;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #3a6cf4;
+    color: #ffffff;
+}
+
+.cssbutton {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #DAE3EC;
+    color: #021934;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    top: 90px;
+    position: relative;
+    align-items: center;
+}
+.cssbutton:hover{
+    background-color: #3a6cf4;
+}
+
+.button-container {
+    text-align: center;
+}
+  
+
+.cssbutton:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    position: relative;
+    bottom: 0%;
+    background-color: whitesmoke;
+    color: #3a6cf4;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: black;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 12px;
+    color: #1a4edf;
+}
+
+.footer .social-icons a:hover {
+    color: #601cfc;
+}
+
+#s {
+    bottom: -532px;
+    position: relative;
+}
